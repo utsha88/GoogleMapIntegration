@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD07CCCF204A1AB000C11C26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCCE204A1AB000C11C26 /* AppDelegate.swift */; };
+		BD07CCD1204A1AB000C11C26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCD0204A1AB000C11C26 /* ViewController.swift */; };
+		BD07CCD4204A1AB000C11C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD07CCD2204A1AB000C11C26 /* Main.storyboard */; };
+		BD07CCD6204A1AB000C11C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD07CCD5204A1AB000C11C26 /* Assets.xcassets */; };
+		BD07CCD9204A1AB000C11C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD07CCD7204A1AB000C11C26 /* LaunchScreen.storyboard */; };
+		BD07CCE4204A1AB000C11C26 /* FindMyNeighborsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCE3204A1AB000C11C26 /* FindMyNeighborsTests.swift */; };
+		BD07CCEF204A1AB000C11C26 /* FindMyNeighborsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCEE204A1AB000C11C26 /* FindMyNeighborsUITests.swift */; };
+		BD07CCFD204A1B6400C11C26 /* FindNeighborsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCFC204A1B6400C11C26 /* FindNeighborsViewController.swift */; };
+		BD07CCFF204A378400C11C26 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CCFE204A378400C11C26 /* LocationCell.swift */; };
+		BD07CD01204A7F4500C11C26 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD07CD00204A7F4500C11C26 /* MapViewController.swift */; };
+		BD1CED50204BBF4900E1AD30 /* MAP_Next.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1CED4F204BBF4900E1AD30 /* MAP_Next.png */; };
+		BDA998E7204A9999005E1042 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BDA998E6204A9999005E1042 /* GoogleMaps.bundle */; };
+		BDA998EB204A99A4005E1042 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998E8204A99A4005E1042 /* GoogleMaps.framework */; };
+		BDA998EC204A99A4005E1042 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998E9204A99A4005E1042 /* GoogleMapsBase.framework */; };
+		BDA998ED204A99A4005E1042 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998EA204A99A4005E1042 /* GoogleMapsCore.framework */; };
+		BDA998EF204A99CB005E1042 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998EE204A99CB005E1042 /* Accelerate.framework */; };
+		BDA998F1204A99D4005E1042 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998F0204A99D4005E1042 /* CoreData.framework */; };
+		BDA998F3204A99DC005E1042 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998F2204A99DC005E1042 /* CoreGraphics.framework */; };
+		BDA998F5204A99E3005E1042 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998F4204A99E3005E1042 /* CoreImage.framework */; };
+		BDA998F7204A99EB005E1042 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998F6204A99EB005E1042 /* CoreLocation.framework */; };
+		BDA998F9204A99F5005E1042 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998F8204A99F5005E1042 /* CoreTelephony.framework */; };
+		BDA998FB204A99FD005E1042 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998FA204A99FD005E1042 /* CoreText.framework */; };
+		BDA998FD204A9A03005E1042 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998FC204A9A03005E1042 /* GLKit.framework */; };
+		BDA998FF204A9A09005E1042 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA998FE204A9A09005E1042 /* ImageIO.framework */; };
+		BDA99901204A9A16005E1042 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA99900204A9A16005E1042 /* libc++.tbd */; };
+		BDA99903204A9A1E005E1042 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA99902204A9A1E005E1042 /* libz.tbd */; };
+		BDA99905204A9A27005E1042 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA99904204A9A27005E1042 /* OpenGLES.framework */; };
+		BDA99907204A9A2F005E1042 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA99906204A9A2F005E1042 /* QuartzCore.framework */; };
+		BDA99909204A9A38005E1042 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA99908204A9A38005E1042 /* SystemConfiguration.framework */; };
+		BDA9990B204A9A3E005E1042 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA9990A204A9A3E005E1042 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD07CCE0204A1AB000C11C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD07CCC3204A1AB000C11C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD07CCCA204A1AB000C11C26;
+			remoteInfo = FindMyNeighbors;
+		};
+		BD07CCEB204A1AB000C11C26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD07CCC3204A1AB000C11C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD07CCCA204A1AB000C11C26;
+			remoteInfo = FindMyNeighbors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD07CCCB204A1AB000C11C26 /* FindMyNeighbors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyNeighbors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD07CCCE204A1AB000C11C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD07CCD0204A1AB000C11C26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD07CCD3204A1AB000C11C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD07CCD5204A1AB000C11C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD07CCD8204A1AB000C11C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD07CCDA204A1AB000C11C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD07CCDF204A1AB000C11C26 /* FindMyNeighborsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyNeighborsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD07CCE3204A1AB000C11C26 /* FindMyNeighborsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyNeighborsTests.swift; sourceTree = "<group>"; };
+		BD07CCE5204A1AB000C11C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD07CCEA204A1AB000C11C26 /* FindMyNeighborsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyNeighborsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD07CCEE204A1AB000C11C26 /* FindMyNeighborsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyNeighborsUITests.swift; sourceTree = "<group>"; };
+		BD07CCF0204A1AB000C11C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD07CCFC204A1B6400C11C26 /* FindNeighborsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindNeighborsViewController.swift; sourceTree = "<group>"; };
+		BD07CCFE204A378400C11C26 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		BD07CD00204A7F4500C11C26 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BD1CED4F204BBF4900E1AD30 /* MAP_Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MAP_Next.png; sourceTree = "<group>"; };
+		BDA998E6204A9999005E1042 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.bundle; sourceTree = "<group>"; };
+		BDA998E8204A99A4005E1042 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		BDA998E9204A99A4005E1042 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		BDA998EA204A99A4005E1042 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		BDA998EE204A99CB005E1042 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		BDA998F0204A99D4005E1042 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BDA998F2204A99DC005E1042 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BDA998F4204A99E3005E1042 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BDA998F6204A99EB005E1042 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BDA998F8204A99F5005E1042 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BDA998FA204A99FD005E1042 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BDA998FC204A9A03005E1042 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BDA998FE204A9A09005E1042 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BDA99900204A9A16005E1042 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BDA99902204A9A1E005E1042 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BDA99904204A9A27005E1042 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BDA99906204A9A2F005E1042 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BDA99908204A9A38005E1042 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BDA9990A204A9A3E005E1042 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD07CCDC204A1AB000C11C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07CCE7204A1AB000C11C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDA998E5204A987B005E1042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA9990B204A9A3E005E1042 /* UIKit.framework in Frameworks */,
+				BDA99909204A9A38005E1042 /* SystemConfiguration.framework in Frameworks */,
+				BDA99907204A9A2F005E1042 /* QuartzCore.framework in Frameworks */,
+				BDA99905204A9A27005E1042 /* OpenGLES.framework in Frameworks */,
+				BDA99903204A9A1E005E1042 /* libz.tbd in Frameworks */,
+				BDA99901204A9A16005E1042 /* libc++.tbd in Frameworks */,
+				BDA998FF204A9A09005E1042 /* ImageIO.framework in Frameworks */,
+				BDA998FD204A9A03005E1042 /* GLKit.framework in Frameworks */,
+				BDA998FB204A99FD005E1042 /* CoreText.framework in Frameworks */,
+				BDA998F9204A99F5005E1042 /* CoreTelephony.framework in Frameworks */,
+				BDA998F7204A99EB005E1042 /* CoreLocation.framework in Frameworks */,
+				BDA998F5204A99E3005E1042 /* CoreImage.framework in Frameworks */,
+				BDA998F3204A99DC005E1042 /* CoreGraphics.framework in Frameworks */,
+				BDA998F1204A99D4005E1042 /* CoreData.framework in Frameworks */,
+				BDA998EF204A99CB005E1042 /* Accelerate.framework in Frameworks */,
+				BDA998EB204A99A4005E1042 /* GoogleMaps.framework in Frameworks */,
+				BDA998ED204A99A4005E1042 /* GoogleMapsCore.framework in Frameworks */,
+				BDA998EC204A99A4005E1042 /* GoogleMapsBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD07CCC2204A1AB000C11C26 = {
+			isa = PBXGroup;
+			children = (
+				BD07CD02204A872D00C11C26 /* Frameworks */,
+				BD07CCCD204A1AB000C11C26 /* FindMyNeighbors */,
+				BD07CCE2204A1AB000C11C26 /* FindMyNeighborsTests */,
+				BD07CCED204A1AB000C11C26 /* FindMyNeighborsUITests */,
+				BD07CCCC204A1AB000C11C26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD07CCCC204A1AB000C11C26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD07CCCB204A1AB000C11C26 /* FindMyNeighbors.app */,
+				BD07CCDF204A1AB000C11C26 /* FindMyNeighborsTests.xctest */,
+				BD07CCEA204A1AB000C11C26 /* FindMyNeighborsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD07CCCD204A1AB000C11C26 /* FindMyNeighbors */ = {
+			isa = PBXGroup;
+			children = (
+				BD1CED4F204BBF4900E1AD30 /* MAP_Next.png */,
+				BD07CCCE204A1AB000C11C26 /* AppDelegate.swift */,
+				BD07CCD0204A1AB000C11C26 /* ViewController.swift */,
+				BD07CCD2204A1AB000C11C26 /* Main.storyboard */,
+				BD07CCD5204A1AB000C11C26 /* Assets.xcassets */,
+				BD07CCD7204A1AB000C11C26 /* LaunchScreen.storyboard */,
+				BD07CCDA204A1AB000C11C26 /* Info.plist */,
+				BD07CCFC204A1B6400C11C26 /* FindNeighborsViewController.swift */,
+				BD07CCFE204A378400C11C26 /* LocationCell.swift */,
+				BD07CD00204A7F4500C11C26 /* MapViewController.swift */,
+			);
+			path = FindMyNeighbors;
+			sourceTree = "<group>";
+		};
+		BD07CCE2204A1AB000C11C26 /* FindMyNeighborsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD07CCE3204A1AB000C11C26 /* FindMyNeighborsTests.swift */,
+				BD07CCE5204A1AB000C11C26 /* Info.plist */,
+			);
+			path = FindMyNeighborsTests;
+			sourceTree = "<group>";
+		};
+		BD07CCED204A1AB000C11C26 /* FindMyNeighborsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD07CCEE204A1AB000C11C26 /* FindMyNeighborsUITests.swift */,
+				BD07CCF0204A1AB000C11C26 /* Info.plist */,
+			);
+			path = FindMyNeighborsUITests;
+			sourceTree = "<group>";
+		};
+		BD07CD02204A872D00C11C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDA9990A204A9A3E005E1042 /* UIKit.framework */,
+				BDA99908204A9A38005E1042 /* SystemConfiguration.framework */,
+				BDA99906204A9A2F005E1042 /* QuartzCore.framework */,
+				BDA99904204A9A27005E1042 /* OpenGLES.framework */,
+				BDA99902204A9A1E005E1042 /* libz.tbd */,
+				BDA99900204A9A16005E1042 /* libc++.tbd */,
+				BDA998FE204A9A09005E1042 /* ImageIO.framework */,
+				BDA998FC204A9A03005E1042 /* GLKit.framework */,
+				BDA998FA204A99FD005E1042 /* CoreText.framework */,
+				BDA998F8204A99F5005E1042 /* CoreTelephony.framework */,
+				BDA998F6204A99EB005E1042 /* CoreLocation.framework */,
+				BDA998F4204A99E3005E1042 /* CoreImage.framework */,
+				BDA998F2204A99DC005E1042 /* CoreGraphics.framework */,
+				BDA998F0204A99D4005E1042 /* CoreData.framework */,
+				BDA998EE204A99CB005E1042 /* Accelerate.framework */,
+				BDA998E8204A99A4005E1042 /* GoogleMaps.framework */,
+				BDA998E9204A99A4005E1042 /* GoogleMapsBase.framework */,
+				BDA998EA204A99A4005E1042 /* GoogleMapsCore.framework */,
+				BDA998E6204A9999005E1042 /* GoogleMaps.bundle */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD07CCCA204A1AB000C11C26 /* FindMyNeighbors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD07CCF3204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighbors" */;
+			buildPhases = (
+				BD07CCC7204A1AB000C11C26 /* Sources */,
+				BD07CCC9204A1AB000C11C26 /* Resources */,
+				BDA998E5204A987B005E1042 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyNeighbors;
+			productName = FindMyNeighbors;
+			productReference = BD07CCCB204A1AB000C11C26 /* FindMyNeighbors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD07CCDE204A1AB000C11C26 /* FindMyNeighborsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD07CCF6204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighborsTests" */;
+			buildPhases = (
+				BD07CCDB204A1AB000C11C26 /* Sources */,
+				BD07CCDC204A1AB000C11C26 /* Frameworks */,
+				BD07CCDD204A1AB000C11C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD07CCE1204A1AB000C11C26 /* PBXTargetDependency */,
+			);
+			name = FindMyNeighborsTests;
+			productName = FindMyNeighborsTests;
+			productReference = BD07CCDF204A1AB000C11C26 /* FindMyNeighborsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD07CCE9204A1AB000C11C26 /* FindMyNeighborsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD07CCF9204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighborsUITests" */;
+			buildPhases = (
+				BD07CCE6204A1AB000C11C26 /* Sources */,
+				BD07CCE7204A1AB000C11C26 /* Frameworks */,
+				BD07CCE8204A1AB000C11C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD07CCEC204A1AB000C11C26 /* PBXTargetDependency */,
+			);
+			name = FindMyNeighborsUITests;
+			productName = FindMyNeighborsUITests;
+			productReference = BD07CCEA204A1AB000C11C26 /* FindMyNeighborsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD07CCC3204A1AB000C11C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Utsha Guha";
+				TargetAttributes = {
+					BD07CCCA204A1AB000C11C26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					BD07CCDE204A1AB000C11C26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD07CCCA204A1AB000C11C26;
+					};
+					BD07CCE9204A1AB000C11C26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD07CCCA204A1AB000C11C26;
+					};
+				};
+			};
+			buildConfigurationList = BD07CCC6204A1AB000C11C26 /* Build configuration list for PBXProject "FindMyNeighbors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD07CCC2204A1AB000C11C26;
+			productRefGroup = BD07CCCC204A1AB000C11C26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD07CCCA204A1AB000C11C26 /* FindMyNeighbors */,
+				BD07CCDE204A1AB000C11C26 /* FindMyNeighborsTests */,
+				BD07CCE9204A1AB000C11C26 /* FindMyNeighborsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD07CCC9204A1AB000C11C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1CED50204BBF4900E1AD30 /* MAP_Next.png in Resources */,
+				BD07CCD9204A1AB000C11C26 /* LaunchScreen.storyboard in Resources */,
+				BD07CCD6204A1AB000C11C26 /* Assets.xcassets in Resources */,
+				BD07CCD4204A1AB000C11C26 /* Main.storyboard in Resources */,
+				BDA998E7204A9999005E1042 /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07CCDD204A1AB000C11C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07CCE8204A1AB000C11C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD07CCC7204A1AB000C11C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07CCFD204A1B6400C11C26 /* FindNeighborsViewController.swift in Sources */,
+				BD07CCD1204A1AB000C11C26 /* ViewController.swift in Sources */,
+				BD07CCFF204A378400C11C26 /* LocationCell.swift in Sources */,
+				BD07CD01204A7F4500C11C26 /* MapViewController.swift in Sources */,
+				BD07CCCF204A1AB000C11C26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07CCDB204A1AB000C11C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07CCE4204A1AB000C11C26 /* FindMyNeighborsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD07CCE6204A1AB000C11C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD07CCEF204A1AB000C11C26 /* FindMyNeighborsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD07CCE1204A1AB000C11C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD07CCCA204A1AB000C11C26 /* FindMyNeighbors */;
+			targetProxy = BD07CCE0204A1AB000C11C26 /* PBXContainerItemProxy */;
+		};
+		BD07CCEC204A1AB000C11C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD07CCCA204A1AB000C11C26 /* FindMyNeighbors */;
+			targetProxy = BD07CCEB204A1AB000C11C26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD07CCD2204A1AB000C11C26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD07CCD3204A1AB000C11C26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD07CCD7204A1AB000C11C26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD07CCD8204A1AB000C11C26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD07CCF1204A1AB000C11C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD07CCF2204A1AB000C11C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD07CCF4204A1AB000C11C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FindMyNeighbors/Info.plist;
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighbors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "";
+			};
+			name = Debug;
+		};
+		BD07CCF5204A1AB000C11C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FindMyNeighbors/Info.plist;
+				LD_MAP_FILE_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighbors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "";
+			};
+			name = Release;
+		};
+		BD07CCF7204A1AB000C11C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindMyNeighborsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighborsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyNeighbors.app/FindMyNeighbors";
+			};
+			name = Debug;
+		};
+		BD07CCF8204A1AB000C11C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FindMyNeighborsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighborsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyNeighbors.app/FindMyNeighbors";
+			};
+			name = Release;
+		};
+		BD07CCFA204A1AB000C11C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindMyNeighborsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighborsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyNeighbors;
+			};
+			name = Debug;
+		};
+		BD07CCFB204A1AB000C11C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FindMyNeighborsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = UG.FindMyNeighborsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FindMyNeighbors;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD07CCC6204A1AB000C11C26 /* Build configuration list for PBXProject "FindMyNeighbors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD07CCF1204A1AB000C11C26 /* Debug */,
+				BD07CCF2204A1AB000C11C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD07CCF3204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighbors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD07CCF4204A1AB000C11C26 /* Debug */,
+				BD07CCF5204A1AB000C11C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD07CCF6204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighborsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD07CCF7204A1AB000C11C26 /* Debug */,
+				BD07CCF8204A1AB000C11C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD07CCF9204A1AB000C11C26 /* Build configuration list for PBXNativeTarget "FindMyNeighborsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD07CCFA204A1AB000C11C26 /* Debug */,
+				BD07CCFB204A1AB000C11C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD07CCC3204A1AB000C11C26 /* Project object */;
+}
